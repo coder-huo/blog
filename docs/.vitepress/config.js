@@ -33,6 +33,7 @@ module.exports = {
       { text: 'vite', link: '/vite'},
       { text: 'vitest', link: '/vitest'},
       { text: 'vitepress', link: '/vitepress'},
+      { text: 'git', link: '/git'},
       
     ]
   }
