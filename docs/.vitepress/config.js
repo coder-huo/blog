@@ -6,8 +6,8 @@ module.exports = {
   head: createHead(),
   themeConfig: {
     search: true,
-    repo: 'vbenjs/vue-vben-admin',
-    docsRepo: 'vbenjs/vue-vben-admin-doc',
+    repo: 'huoguanghua/blog',
+    docsRepo: 'huoguanghua/blog',
     logo: '/logo.png',
     docsBranch: 'main',
     editLinks: true,
