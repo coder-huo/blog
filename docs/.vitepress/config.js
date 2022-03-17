@@ -2,7 +2,7 @@ module.exports = {
   lang: 'zh-CN',
   title: "Website Title",
   description: "Just playing around.",
-  base: '/',
+  base: '/blog/',
   head: createHead(),
   themeConfig: {
     search: true,

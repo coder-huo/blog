@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a}from"./app.b51da2ca.js";const f='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"contact/contact1.md"}',c={};function o(r,n,s,_,p,i){return a(),e("div")}var l=t(c,[["render",o]]);export{f as __pageData,l as default};
