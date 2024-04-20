@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://github.com/coder-huo/blog",
+  "module": "es",
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
@@ -17,6 +18,7 @@
     "@nuxtjs/plausible": "^0.2.4",
     "@types/node": "^20.11.24",
     "eslint": "^8.57.0",
-    "nuxt": "^3.10.3"
+    "nuxt": "^3.10.3",
+    "pinceau": "^0.15.4"
   }
 }
