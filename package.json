@@ -2,6 +2,7 @@
   "name": "docus-starter",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/coder-huo/blog",
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
