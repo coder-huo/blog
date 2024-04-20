@@ -5,15 +5,25 @@ on:
       - master
 jobs:
   build-and-deploy:
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      - name: Build and Deploy
+      - name: Install and Build 🔧
+        run: |
+          npm ci
+          npm run build  
+
+      - name: name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
-          BUILD_SCRIPT: npm install && npm run build
+        with:
+          folder: dist
+          token: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages
+        # env:
+        #   ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        #   BRANCH: gh-pages
+        #   FOLDER: dist
+        #   BUILD_SCRIPT: npm install && npm run build
